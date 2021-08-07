@@ -4,7 +4,7 @@ all:
 #	interfaces
 	erlc -I ../../interfaces -o ebin ../../interfaces/*.erl;
 #	etcd
-	erlc -I ../../interfaces -o ebin ../../etcd/src/*.erl;
+	erlc -I ../../interfaces -o ebin ../../kube_dbase/src/*.erl;
 #	application
 	cp src/*.app ebin;
 	erlc -o ebin src/*.erl;
