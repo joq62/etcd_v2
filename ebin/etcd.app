@@ -1,12 +1,12 @@
 %% This is the application resource file (.app file) for the 'base'
 %% application.
-{application, kubelet,
-[{description, "kubelet  " },
+{application, etcd,
+[{description, "etcd  " },
 {vsn, "1.0.0" },
 {modules, 
-	  [kubelet_app,kubelet_sup]},
-{registered,[kubelet]},
+	  [etcd_app,etcd_sup,etcd]},
+{registered,[etcd]},
 {applications, [kernel,stdlib]},
-{mod, {kubelet_app,[]}},
+{mod, {etcd_app,[]}},
 {start_phases, []}
 ]}.
