@@ -1,8 +1,6 @@
 all:
 #	service
 	rm -rf ebin/*;
-#	interfaces
-	erlc -I ../../interfaces -o ebin ../../interfaces/*.erl;
 #	etcd
 	erlc -I ../../interfaces -o ebin ../../kube_dbase/src/*.erl;
 #	application
